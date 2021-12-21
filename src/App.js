@@ -59,7 +59,7 @@ function App() {
 
 // function to add bills
 const addBills = async (newBill) => {
-  const response = await fetch(url, {
+    await fetch(url, {
     method: "post",
     headers: {
       "Content-Type": "application/json",

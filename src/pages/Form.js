@@ -1,5 +1,6 @@
 import {useState} from "react";
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
+import Modal from "../components/Modal";
 
 const Form = ({initialBill, handleSubmit, buttonLabel}) => {
 
@@ -24,7 +25,31 @@ const Form = ({initialBill, handleSubmit, buttonLabel}) => {
 
   }
 
-  return <form onSubmit={handleSubmission}>
+
+    //==============================================
+    const BUTTON_WRAPPER_STYLES = {
+      position: "relative",
+      display: "flex",
+      margin: "auto",
+      justifyContent: "center",
+      zIndex: 1,
+  
+      //==============================================
+    };
+  
+    //===================================++======
+    const [isOpen, setIsOpen] = useState(false);
+    //===================================++======
+
+
+  return (
+  <>
+   <div style={BUTTON_WRAPPER_STYLES}>
+        <button onClick={() => setIsOpen(true)}>Enter the fields here</button>
+        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+          <br></br>
+  
+  <form onSubmit={handleSubmission}>
     <input
       type="text"
       placeholder="Name of Bill"
@@ -48,6 +73,14 @@ const Form = ({initialBill, handleSubmit, buttonLabel}) => {
       /><br></br>
     <input type="submit" value={buttonLabel} />
   </form>
+</Modal>
+<Link to="/">
+          <button>Go Back to Home</button>
+        </Link>
+  </div>
+  </>)
+
+  
 };
 
 export default Form;
