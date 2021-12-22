@@ -25,10 +25,10 @@ const SinglePost = ({posts, edit, deleteBill}) => {
         <h1>{post?.subject}</h1>
         <h2>{post?.details}</h2>
         <h6>{post?.date}</h6>
-        <button onClick={() => deleteBill(post)}>Delete</button><br></br>
-        <button onClick={() => edit(post)}>Edit</button><br></br>
+        <button className="bg-gray-500 px-2 py-1 rounded-md text-white font-semibold" onClick={() => edit(post)}>Edit</button><br></br>
+        <button className="bg-red-500 px-2 py-1 rounded-md text-white font-semibold" onClick={() => deleteBill(post)}>Delete</button>
         <Link to="/">
-            <button>Go Back</button>
+            <button className="bg-blue-500 px-2 py-1 rounded-md text-white font-semibold">Go Back</button>
         </Link>
     </div>
 }

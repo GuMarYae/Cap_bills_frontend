@@ -45,7 +45,7 @@ const Form = ({initialBill, handleSubmit, buttonLabel}) => {
   return (
   <>
    <div style={BUTTON_WRAPPER_STYLES}>
-        <button onClick={() => setIsOpen(true)}>Enter the fields here</button>
+        <button className="bg-green-500 px-2 py-1 rounded-md text-white font-semibold" onClick={() => setIsOpen(true)}>Enter the fields here</button>
         <Modal open={isOpen} onClose={() => setIsOpen(false)}>
           <br></br>
   
@@ -75,7 +75,7 @@ const Form = ({initialBill, handleSubmit, buttonLabel}) => {
   </form>
 </Modal>
 <Link to="/">
-          <button>Go Back to Home</button>
+          <button className="bg-orange-500 px-2 py-1 rounded-md text-white font-semibold">Go Back to Home</button>
         </Link>
   </div>
   </>)

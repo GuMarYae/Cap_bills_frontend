@@ -31,7 +31,7 @@ const Modal = ({ children, open, onClose }) => {
       {/* <div style={OVERLAY_STYLES}></div> */}
 
       <div class="closeButton" style={MODAL_STYLES}>
-        <button onClick={onClose}>Close</button>
+        <button className="bg-red-500 px-2 py-1 rounded-md text-white font-semibold" onClick={onClose}>close</button>
         {children}
       </div>
     </>

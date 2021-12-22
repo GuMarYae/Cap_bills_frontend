@@ -21,7 +21,7 @@ const h1 = {
 };
 
 const button = {
-  backgroundColor: "orange",
+  // backgroundColor: "orange",
   display: "block",
   margin: "auto"
 }
@@ -119,14 +119,19 @@ const deleteBill = async (bill) => {
   // Returned JSX
   //////////////////////////
 
-  return (
+  return (<>
+<h1 className="text-5xl font-bold underline" style={h1}>My Bills List</h1>
+<Link to="/new">
+  <button className="bg-gray-500 px-2 py-1 rounded-md text-white font-semibold" style={button}>Make new bill reminder</button>
+</Link>
+
     <div className="App">
       {/* <h1 className="text-5xl font-bold underline">
       Hello world!
     </h1> */}
+                        
 
-<h1 className="text-5xl font-bold underline" style={h1}>My Bills List</h1>
-<Link to="/new"><button style={button}>Make new bill reminder</button></Link>
+
       <Routes>
         <Route path="/" element={<AllPosts posts={posts}/>}/>
         <Route path="/post/:id" element={<SinglePost 
@@ -137,7 +142,7 @@ const deleteBill = async (bill) => {
         <Route path="/new" element={<Form 
           initialBill={nullBill}
           handleSubmit={addBills}
-          buttonLabel="Create a bill reminder"
+          buttonLabel="Create"
         />} />
         <Route path="/edit" element={<Form
           initialBill={targetBill}
@@ -146,7 +151,9 @@ const deleteBill = async (bill) => {
         />} />
       </Routes>
     </div>
-  );
+  </>);
 }
 
 export default App;
+
+

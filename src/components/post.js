@@ -13,12 +13,14 @@ const Post = ({ post }) => {
   };
 
   return (
-    <div style={div}>
-      <Link to={`/post/${post.id}`}>
-        <h1>{post.subject}</h1>
-      </Link>
-      <h2>{post.details}</h2>
-      <h2>{post.date}</h2>
+    <div className ="flex justify-center mt-10">
+      <div style={div}>
+        <Link to={`/post/${post.id}`}>
+          <h1>{post.subject}</h1>
+        </Link>
+        <h2>{post.details}</h2>
+        <h2>{post.date}</h2>
+      </div>
     </div>
   );
 };
