@@ -22,10 +22,43 @@ code {
 .App{
   display: block;
   flex-wrap: wrap;
-  justify-content:space-around;
-  border-radius: 3em;
+  /* justify-content:space-around; */
+  border-radius: 2em;
   margin: 10px auto;
+  /* text-align: center; */
+  width: 33%;
+  /* box-shadow: "0 0 10px rgba(0, 0, 0, 1)"; */
+
+
+  /* background-color: #282c34;
+  opacity: 0.99;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  
+  
+
+}
+
+#billsIndex{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* background-color: "#d5ffff"; */
   text-align: center;
-  width: 25%;
+  border: 0.01em solid blue;
+  border-radius: 2em;
+  margin: 27px auto;
+  padding:1px;
   box-shadow: "0 0 10px rgba(0, 0, 0, 1)";
+
+
+  
+  
+  align-items: center;
+  justify-content: center;
+}
+
+.billsIndexBackgroung{
+
 }
