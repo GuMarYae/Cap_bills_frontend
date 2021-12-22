@@ -9,6 +9,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image:url(https://miro.medium.com/max/1400/1*EIjl13LFiA57CvLa1Kfydw.png);
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
 code {
