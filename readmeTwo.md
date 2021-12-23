@@ -31,13 +31,13 @@ List your routes in a table
 ## User Stories
 
 - User should be able to put down what they want on this app so that they don’t have to worry about forgetting after. 
-- User should be aboe to view all bills n their list
+- User should be able to view all bills n their list
 - User should be able to add a bill to the list
 - User should be able to update a bill to the list
 - User should be able to delete a bill to the list
 
 ## Challenges
-making a border and respomsive screen with respect to Tailwind wasnt working so I had to put it back into CSS
+making a border and responsive screen with respect to Tailwind wasnt working so I had to put it back into CSS
 
 could not figure out a way to make a button icon/ logo for the create button  since its a rooute,. Tried outting a button inside the route but the whole page went blank so Left it alone
 
