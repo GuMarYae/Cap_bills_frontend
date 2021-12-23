@@ -1,1 +1,7 @@
-https://cap-bills-backend.herokuapp.com/bills
+https://cap-bills-backend.herokuapp.com/bills  url 
+
+https://heroicons.com/   for icons
+
+https://tailwindcss.com/docs/guides/create-react-app  installation
+
+https://tailwindcomponents.com/component/unordered-list-of-card-items-with-elevation-on-hover cool tailwind help
