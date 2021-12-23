@@ -14,7 +14,7 @@ const Post = ({ post }) => {
   };
 
   return (
-    <div id = "billsIndex" className ="flex justify-center mt-10">
+    <div id = "billsIndex" className ="select-none cursor-pointer rounded-md flex flex-1 items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
       <div style={div}>
         <Link to={`/post/${post.id}`}>
           <h1>{post.subject}</h1>
@@ -27,3 +27,6 @@ const Post = ({ post }) => {
 };
 
 export default Post;
+
+
+//select-none cursor-pointer bg-gray-200 rounded-md flex flex-1 items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg  
