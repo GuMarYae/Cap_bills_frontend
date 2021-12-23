@@ -15,7 +15,8 @@ const SinglePost = ({posts, edit, deleteBill}) => {
     /////////////////////
     const div = {
         textAlign: "center",
-        border: "3px solid green",
+        border: "3px solid blue",
+        borderRadius:"2.5em",
         width: "80%",
         margin: "30px auto"
     }

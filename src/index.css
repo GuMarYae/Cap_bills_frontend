@@ -30,11 +30,11 @@ code {
   /* box-shadow: "0 0 10px rgba(0, 0, 0, 1)"; */
 
 
-  /* background-color: #282c34;
-  opacity: 0.99;
-  flex-direction: column;
+  /* background-color: #282c34; */
+  background-color: rgba(209, 205, 243, 0.4); 
+   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   
   
 
@@ -46,7 +46,7 @@ code {
   /* flex-direction: column; */
   /* background-color: "#d5ffff"; */
   text-align: center;
-  border: 0.01em solid blue;
+  /* border: 0.1em outset lightgray; */
   border-radius: 2em;
   margin: 27px auto;
   padding:1px;

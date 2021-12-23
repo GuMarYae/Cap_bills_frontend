@@ -7,7 +7,8 @@ const Post = ({ post }) => {
   ///////////////////////////
   const div = {
     textAlign: "center",
-    border: "3px solid",
+    border: "0.3em outset white",
+    borderRadius:"2em ",
     margin: "10px auto",
     width: "80%",
   };
