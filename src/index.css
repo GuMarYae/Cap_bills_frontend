@@ -62,3 +62,14 @@ code {
 .billsIndexBackgroung{
 
 }
+
+#singlePost{
+  /* background-color: red; */
+  background-color: rgba(160, 8, 41, 0.4); 
+   transition: background-color 3s, color 3s
+}
+
+#singlePost:hover{
+  background-color: black;
+color:white
+}

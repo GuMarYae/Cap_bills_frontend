@@ -22,7 +22,7 @@ const SinglePost = ({posts, edit, deleteBill}) => {
     }
 
 
-    return <div style={div}>
+    return <div id = "singlePost" style={div}>
         <h1>{post?.subject}</h1>
         <h2>{post?.details}</h2>
         <h6>{post?.date}</h6>
