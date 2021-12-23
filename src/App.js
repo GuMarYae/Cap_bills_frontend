@@ -120,7 +120,7 @@ const deleteBill = async (bill) => {
   //////////////////////////
 
   return (<>
-<h1 className="text-5xl font-bold underline" style={h1}>My Bills List</h1>
+<h1 className="text-8xl font-bold animate-spin" style={h1}>💲</h1>
 
 
 <Link to="/new" >
