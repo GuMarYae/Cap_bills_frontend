@@ -33,7 +33,8 @@ function App() {
 
   const navigate = useNavigate()
 
-  const url = "https://cap-bills-backend.herokuapp.com/bills/";
+  //const url = "https://cap-bills-backend.herokuapp.com/bills/";
+  const url = "https://cap-bills-backend.onrender.com/bills";
 
   // state to hold list of bills
   const [posts, setPosts] = useState([]);
